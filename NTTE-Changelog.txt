@@ -1,0 +1,467 @@
+2.04 ~ Interdimensional Terror
+	
+	   @(sprite:menu/banners/sprTerrorMain.png:1)
+	GENERAL
+	+	@wLoop Boss @sfor @rCrystal Heart @schunks
+	+	NT:TE's custom skins now have special reskins for their starting @yGolden Weapons @(sprite:skins/Weapons/Orchid/sprOrchidAssaultRifle.png:1) @(sprite:skins/Weapons/Red/sprRedAssaultRifle.png:1) @(sprite:skins/Weapons/Angler/sprAnglerAssaultRifle.png:1)
+	+	@yElite Eels @sspawn lightning rings on death
+	~	@wCrown of Crime @(sprite:crowns/Crime/sprCrownCrimeIdle.png:20:-0.4:-1:12) @sis now pre-loop exclusive
+	~	@bCrown of Bonus @(sprite:crowns/Bonus/sprCrownBonusIdle.png:15:-0.4:-1:12) @sis now loop exclusive
+	~	Reduced the size of @rCrystal Heart @sarea chunks by about @w20%@s, but increased their enemy spawns
+	~	Reduced the spawn chance of @rCrystal Brains @sand decreased the lifespan of their clones
+	~	Reduced the @bSuper Ambush @sevent's intensity, and lowered its spawn chance
+	~	Reduced how much @bCoast's @socean slows the player
+	
+	               @(sprite:menu/banners/sprTerrorWeapons.png:1)
+	WEAPONS
+	+	New weapon, @rEntangler @(sprite:weps/sprEntangler.png:1)
+	+	@yGolden Tunneller @(sprite:weps/sprGoldTunneller.png:1:0:-1:12)
+	+	@wCat Chests @snow offer @(sprite:areas/Crystal/sprRedText.png:12:-0.8) ammo
+	~	@r@(sprite:areas/Crystal/sprRedText.png:12:-0.8) Weapons @sare now charge weapons
+	~	Increased @rAnnihilator's @sslash damage by @w2 @sand reduced its reload time by @w0.2 @sseconds
+	~	Increased @rTunneller's @sorb damage by @w50% @sand tweaked its loot spawns
+	~	@rTunneller's @sarea chunks are no longer increased in size by @gLaser Brain
+	~	Improved @wPizza Cutter's @scharge FX
+	~	@yGolden Merged Weapons @sstart with at least 2 shots
+	*	Fixed @wScythe's @sprompt loading tips changing level gen
+	*	Fixed @wBat Disc Cannon's @shoming sprite being offset
+	*	Fixed errors related to mods firing charge weapons
+	
+	            @(sprite:menu/banners/sprTerrorPets.png:1)
+	PETS
+	+	New pet for @wCrib
+	+	New API for custom pets
+	~	Reduced @rTwins @spet's contact damage from @w2 @sto @w1
+	*	Fixed @wParrot @spet hyper-splashing in @wCoast's @socean when sitting too far out
+	*	Fixed @yGolden Mimic @spet appearing under weapon pickups when closed
+	*	Fixed @pPrism @spet having buggy duplications for some thrown weapons (Bat Disc Guns, Clam Shield, etc.)
+	*	Fixed pet loading tips affecting level generation
+	*	Fixed pets getting getting stuck in walls occasionally
+	*	Fixed pets running around @bCaptain's @scutscene
+	*	Fixed pets that don't exist appearing on the stats screen if another mod spawned one incorrectly
+	
+	       @(sprite:menu/banners/sprTerrorParrot.png:1)
+	PARROT
+	+	Simplified @rParrot's @sactive ability
+	+	Visual improvements to feather HUD  @(sprite:races/Parrot/sprParrotFeatherHUD.png:8:0:0:0)@(sprite:races/Parrot/sprParrotFeatherHUD.png:8:-0.25:0:0)
+	+	Indicator for off-screen charmed enemies
+	~	@rCharm @snow uses @wBodyguard Style
+	~	Ultras adjusted for @wBodyguard Style
+	~	Charmed enemies attack much more often
+	~	Reduced max feathers from @w5 @sto @w3 @sstacks
+	~	Reduced per-feather charm time from @w2 @sto @w1 @sseconds
+	~	Reduced the feathers released by certain chests
+	~	Uncharming enemies no longer gives them i-frames
+	~	Bosses no longer lose charm twice as fast
+	*	Fixed @rParrot's @wBest Area @sstat breaking with area map names that use custom sprites
+	*	Fixed @rParrot's @wLoops @sstat increasing when they visited a @yCrown Vault
+	*	Fixed @rParrot @spitching @wRevolver's @sswap sound around
+	*	Fixed charmed enemies removing i-frames from enemies they touch
+	*	Fixed charmed enemies appearing above feathers when outlines are enabled
+	*	Fixed charmed @wSnipers @stargeting the player
+	*	Fixed charmed @rCrystal Brains @snot charming clones
+	*	Fixed charmed @wCampsite Bandits @shaving partially green bandanas with shaders enabled
+	
+	                    @(sprite:menu/banners/sprTerrorPolish.png:2:-0.01)
+	POLISH & IMPROVEMENT
+	+	Significant performance improvements
+	+	Gave @gToxic Ballguys @sa shadow @(sprite:sprSuperFrogWalk:0:-0.4:20:12)
+	~	Increased the pickup drop chance for @wCats @dslightly
+	~	Increased the weapon drop chance for @wPelicans
+	~	@wDivers @sin @wPalm Tree Forts @snow fall to their death
+	~	@wSeal King @sstops panning the camera during their intro if an enemy is alive
+	~	Improved the @wCoast @socean's mod compatibility
+	~	Increased the volume of @r@(sprite:areas/Crystal/sprRedText.png:12:-0.8)'s @smusic
+	~	Reduced the chance for @(sprite:areas/Crystal/sprRedText.png:12:-0.8) to lead to @wCrib @(sprite:sprCuzInteract:0:-0.4:-1:12)
+	~	@bBonus Ammo @sstops ticking after entering a new level
+	~	@gCat Chest @sturrets no longer get turned into ammo chests by @yCrown of Love
+	*	Partial fix for shaders in NTT beta (9942+) versions
+	*	@gAnomaly @sportals can no longer spawn out of bounds
+	*	Fixed @pMom's @spool covering the @gSewers @smanhole
+	*	Fixed @yLair @smanholes rarely appearing above the player when on the ground
+	*	Fixed @wSilver Tongue @sbeing obtained without @gBig Shots
+	*	Fixed @wSeal King @ssometimes erroring on death
+	*	Fixed @wSeal King @sgetting stuck in their intro due to interactions with other mods
+	*	Fixed @wCoast @wChaos Heart @schunks having @wParrot @spets, and not having walls outside of @wCoast
+	*	Fixed @bOasis @wChaos @schunks having @wSlaughter @spets
+	*	Fixed @bLabs @wChaos @schunks not having @wTechnoMancer
+	*	Fixed @yCrown Vaults @sentered right after @(sprite:areas/Crystal/sprRedText.png:12:-0.8) leading back to the area before @(sprite:areas/Crystal/sprRedText.png:12:-0.8)
+	*	Fixed multiple @rCrystal Hearts @sbeing able to spawn on a loop if none were seen on a previous loop
+	*	Fixed @wAlbino Gator @slaser sights appearing below @wCoast's @socean when aiming down
+	*	Fixed @wCoast @srocks occasionally spawning over floors
+	*	Fixed @wDiver's @sdeath sprite being offset wrongly  @(sprite:enemies/Diver/sprDiverDead.png:9:3:12:12)
+	*	Fixed buggy @wHammerhead Sharks @son non-30 FPS
+	*	Fixed @bPit Squid @sarms flashing multiple times when hit
+	*	Fixed the @bAbyssal Fish @sskin's eye trails not quite lining up with their actual eyes
+	*	Fixed @bBonus Ammo @sHUD being offset in co-op
+	*	Fixed @wWeapon Mimic @snot setting a cause of death for some melee attacks
+	
+2.03 ~ Go for the Gold
+	
+	    @(sprite:menu/banners/sprGoldMain.png:1)
+	GENERAL
+	+	New enemies: @wCrystal Bats @s+ @yGolden Anglers
+	+	New unlockable skins for @bFish @sand @yPlant
+	+	Gave @yHyper Crystal @sa @wPit Arena
+	+	Gave @wSeal King @sa new theme
+	+	Added a @wB-theme @strack to @bTrench
+	+	Mechanically overhauled @bBonus Ammo @s& @bHP Pickups
+	+	New prop for @pCrystal Caves
+	+	@rCrystal Heart Orbs @sgenerate @wI.D.P.D. H.Q. @schunks when deflected by @wShielders
+	+	Added some new mutations, only obtainable at @rPalace Shrines @sfor now @(sprite:skills/Toad Breath/sprToadBreathHUD.png:1:0:16:12) @(sprite:skills/Lead Ribs/sprLeadRibsHUD.png:1:0:16:12)
+	+	Subtle @wFootprint @svisuals for walking on soft ground
+	~	@gSludge Pools @snow support @wExtra Feet
+	~	Reduced @wEel @rHP @sfrom @w12 @sto @w10
+	~	Reduced @wAngler @rHP @sfrom @w50 @sto @w45
+	~	Players can now shoot and use their active during @wSeal King's @sintro
+	~	Gave the @bAquatic Route @sa new map icon @(sprite:menu/sprRouteIcon.png:2:0)
+	~	@bLoop Trench @shas @wCrystal Bats @s+ @wLightning Crystals @sinstead of @wSalamanders @s+ @wLaser Crystals
+	~	Slightly lowered @yMortar @sspawns in @pCrystal Caves
+	~	Slightly shrunk the size of the main level during the @wScorpion City @sand @wSeal Plaza @sevents
+	~	The @wScorpion City @sevent spawns an extra @wSilver Scorpion @sfor each loop
+	~	The @rFire Pit @sevent creates less fire traps
+	~	Gave @wParrot @slouder footstep sounds
+	~	@rFake Walls @sare easier to spot
+	*	Fixed the @gSewer Pool @sroom sometimes being empty in NTT beta (9942+) versions
+	*	Fixed @yLair @srarely not generating past its hallway@d?
+	*	Fixed @wBig Bat @snot collecting @wBig Cat's @srads during morph mode in NTT beta (9942+) versions
+	*	Fixed @yPit Eels @soccasionally breaking through the floor right when the level starts
+	*	Fixed @yPit Eels @scausing an error if you died right when the level started
+	*	Fixed enemies cloned by @rCrystal Brain @sdropping the same weapons as their original enemy
+	*	Fixed @rFake Walls @shaving weird collision with the player and their projectiles
+	*	Fixed @rFake Walls @svisually breaking if you paused the game in NTT beta (9942+) versions
+	*	Fixed @wBat Chests @sincreasing next run's @wBig Weapon Chest @schance if restarting from the death screen
+	*	Fixed a rare error with charmed @wGators
+	*	Fixed NT:TE's HUD not fading out for the credits
+	*	Fixed NT:TE's HUD not appearing during boss intros
+	
+	             @(sprite:menu/banners/sprGoldWeapons.png:1)
+	WEAPONS
+	+	New weapon, @wPizza Cutter @(sprite:weps/sprPizzaCutter.png:3:2:-1:12)
+	+	Added ammo indicating lights for @wBat Disc @sguns @(sprite:weps/sprBatDiscLauncher.png:4:-0.1:-1:12)
+	+	@rAnnihilator @snow displays text and plays a sound when you annihilate an enemy
+	~	Increased @wBubble Bat's @smain damage from @w8 @sto @w16
+	~	Reduced @wBat Disc @sdamage from @w3 @sto @w2, @sand made them less overpowered with @wBolt Marrow
+	~	Reduced @wBat Disc Cannon's @smain damage from @w8 @sto @w2
+	~	@pElectroplasma Cannon @sspawns on @w7-1 @sinstead of @w4-1
+	~	@wShotgun Shoulders @sbuffs @wScythe @sbolts a little more
+	~	@wScythe's @sprompt tips now respect rebound controls
+	*	Fixed @wBat Discs @snot returning to players in portals
+	*	Fixed @wTrident @snot blinking at max charge
+	*	Fixed @yGolden Trident @snot pulling back if you start a run with it after recently starting the session
+	*	Fixed @rQuasar Rings @sleaving behind ghostly @rQuasar Beams @sif destroyed
+	*	Fixed NT:TE's grenade-style projectiles not getting baseballed by @bLightning Hammer
+	
+	               @(sprite:menu/banners/sprGoldPets.png:1)
+	PETS
+	+	@wSalamander @spet now gives invulnerability @sto its rider, and melts projectiles while charging
+	+	@pThrone Butt @sincreases @wSalamander @spet's enemy punting chance by about @w1.5x
+	~	Increased @wSalamander @spet's bashing damage by about @w2.5x, @sand made it pierce more
+	~	@wSalamander @spet's @w"MOUNT" @sprompt no longer overrides weapon pickup prompts
+	~	Tripled @bSlaughter @spet's bite damage + radius, and gave them a bigger hurt explosion
+	~	@bOcto @snow spawns on @(sprite:menu/sprRouteIcon.png:2:0)@w3-3 instead of @(sprite:menu/sprRouteIcon.png:2:0)@w3-1
+	*	Fixed pets attacking @wSeal King @swhile he's out at sea
+	*	Fixed @rTwins @spet visually reorienting @gGuardian Orbs
+	
+2.02 ~ Sludge Party
+	
+	         @(sprite:menu/banners/sprSludgeMain.png:1)
+	+	Gave @pMom @sa @gSludge Nest
+	+	New weapon, @pElectroplasma Cannon
+	+	Added a @wB-Theme @strack to @wCoast
+	+	Added a shadow to @bI.D.P.D. Shields
+	~	@bPit Squid @sperformance improvements
+	~	@bPit Squid's @stentacles now can't be hit while rising from a pit, for fear of @wNaders
+	~	Reduced @bPit Squid's @rHP @sfrom @w400 @sto @w340
+	~	Reduced @wJellyfish @rHP @sfrom @w52 @sto @w42
+	~	@pElectroplasma @sguns have a better reload sound
+	~	Once @yMimic @sstores every gun, their stat text @q@wshakes
+	*	@yPit Eels @snow smash @sthrough the floor if no pits are available, no more softlock
+	*	Fixed @gUltra Bolts @sgetting deleted over @wCoast's @socean
+	*	Fixed @rWarp Portals @sgetting moved to @wCoast's @socean, sometimes causing a softlock
+	*	Fixed @wMerged Grenade Projectiles @snot blinking before exploding in NTT beta (9942+) versions @(sprite:sprGrenadeBlink:0:-0.15)
+	*	Fixed deflected projectiles rarely not visually changing their team @(sprite:sprEnemyBullet1:0:1) -> @(sprite:sprAllyBullet:0:1)
+	*	Fixed @yElite Eels @sfrom the @yEel Grave @sevent giving off too much light
+	*	Fixed an error from opening a normal @yGold Chest
+	
+2.01 ~ Time to Fix
+	
+	+	Net Launcher projectiles now support melee baseball
+	+	Gave the Crib's TV and giant chests slightly better shadows
+	+	Added a chat command helper for the '/ntte' command
+	+	The loading bar now supports full gamepad input
+	~	Bonus Health now gets taken before Strong Spirit
+	~	Made Chaos Hearts both more and less chaotic
+	~	Twins pet no longer damages props and also sets a cause-of-death if you kill yourself with it
+	~	The scorpion rock prop becomes friendly a bit faster, and no longer spawns during Scorpion City
+	*	Fixed the Auto Updater occasionally making the mod unloadable
+	*	Fixed the mod trying to update when you don't have internet
+	*	Fixed a few errors that occurred in the NTT beta (9942+) versions
+	*	Fixed the changelog being unreadable in NTT beta (9942+) versions
+	*	Fixed Lair's turrets not having hitboxes in NTT beta (9942+) versions
+	*	Fixed Lair's doors not opening properly in NTT beta (9942+) versions
+	*	Fixed the fake walls in @r[REDACTED] @snot looking right in NTT beta (9942+) versions
+	*	Fixed Ravens and Lil Hunter appearing above walls after flying in NTT beta (9942+) versions
+	*	Fixed walls next to Silver Tongue crates having no hitbox in NTT beta (9942+) versions
+	*	Fixed wall shadows from Crystal Heart area chunks sometimes being visible outside of the level in NTT beta (9942+) versions
+	*	Fixed the Throne's broken pipe decals appearing above the Throne during its intro in NTT beta (9942+) versions
+	*	Fixed Big Bat getting stuck in their transformation when playing on <20 FPS in NTT beta (9942+) versions
+	*	Fixed Harpoons erroring when attached to flying Lil Hunters or Ravens in NTT beta (9942+) versions
+	*	Fixed Net Launcher tying big objects to themselves, and pushing them towards a direction forever
+	*	Fixed Lil Hunter getting stuck if you take a trident out of him mid-flight
+	*	Fixed Orchid Rhino Skin taking 4 HP when you lose the mutation, causing death
+	*	Fixed the character selection loadout sometimes causing errors in NTT 9940
+	*	Fixed the '/ntte' command not opening the NTTE menu in the Settings menu
+	*	Fixed the Mansion's gold chest not spawning with a golden weapon inside
+	*	Fixed Big Fish's boss intro not playing if you attacked him fast enough
+	*	Fixed the Orchid Flower reroll's icon appearing over Patience's icon
+	*	Fixed the Strong Spirit halo being invisible when in Coast's water
+	*	Fixed Crystal Brain clones not appearing red in Coast's ocean
+	*	Fixed an error with Prism duplicating Quasar Beams
+	*	Fixed Seal King softlocking the game if playing on a lower max FPS
+	*	Fixed Water Boost from an Orchid looping its sound forever if active when you lose it
+	*	Fixed tires & chairs being able to spawn in the walls of Lair's garage rooms
+	*	Fixed corpses awkwardly floating above pits at the end of the level in Trench
+	*	Fixed the ocean following you back to the character selection screen from Coast
+	*	Fixed the Raven Arena not creating enough ravens
+	*	Fixed a weird error with Energy Bat slashes
+	*	Fixed Chaos hearts spawning when they shouldn't
+	
+2.0 ~ Heart to Heart
+	
+	  @(sprite:menu/banners/sprHeartMain.png:1)
+	GENERAL
+	+	New area: @(sprite:areas/Crystal/sprRedText.png:12:-0.8)
+	+	New crowns: @bBONUS @s+ @rRED
+	+	New mutations: @wCOMPASSION @s+ SILVER TONGUE
+	+	Brand new level-modifying @wEvents
+	+	Unlockable skin for @pCrystal
+	+	Desert @wBlocked Rooms
+	+	Desert @wWall Bandits
+	+	Scrapyards @gSludge Pools
+	+	Arctic Seal @wIgloos
+	+	Labs @wFreak Chambers
+	+	The Crown Vault @yFlower @(sprite:skills/Reroll/sprSkillRerollHUD.png:1:0:16:12)
+	+	@bI.D.P.D. H.Q. @wElevators
+	+	@bI.D.P.D. H.Q. @wSecurity
+	+	Overhauled @bBonus Ammo @s& @bHP @bPickups
+	+	@bBonus @wChests
+	+	@yOrchid @wChests
+	+	@pHammerhead @wPickups
+	+	@rCrystal Hearts
+	+	Miner Bandits @(sprite:enemies/MinerBandit/sprMinerBanditIdle.png:4:-0.4:-1:12)
+	+	@wChangelog @sViewer
+	+	@wAuto Updating @sSystem
+	@d+	Try skipping big weapon chests
+	
+	  @(sprite:menu/banners/sprHeartEvents.png:1)
+	EVENTS
+	+	@wBandit Camp
+	+	@pScorpion City
+	+	@wMaggot Park, @sNew & Improved
+	+	@wBounty Hunter Den
+	+	@gSewer Pool
+	+	@rFire Pit
+	+	@sRaven @wArena @(sprite:sprRavenFly:0:-0.3:-1:12)
+	+	@wEel Grave
+	+	@wSeal Plaza         @(sprite:enemies/Seal/sprSealWalk5.png:6:-0.35:-1:12)@q@r!!!
+	+	@gMutant Vats
+	+	@pPalace Shrines
+	+	@wSuper Ambush
+	-	Removed old "events", which mainly increased enemy spawns
+	
+	  @(sprite:menu/banners/sprHeartPets.png:1)
+	PETS
+	+	Pet for @wScrapyards
+	+	Pet for @yCrown Vault
+	+	Pet for @wGeneral Areas
+	+	Pet for @(sprite:areas/Crystal/sprRedText.png:12:-0.8)
+	+	@wSpider @shas a special interaction with @yCursed Caves
+	+	@pPrism @scan dupe thrown @wBones & Weapons, @sat a @q@pcost
+	~	Pet @rHP @snow scales by @w+50% @sper loop
+	~	Pets are now revived through a @wPrompt, @sinstead of just contact
+	~	Getting @wSilver Scorpion @sis no longer based on @wRNG
+	~	@wParrot @spet now nicely perches on all modded mutants and skins
+	~	Revised @bOcto's @sidle/walk sprite @(sprite:pets/Trench/sprPetOctoIdle.png:16:-0.4:-1:12)
+	~	Untamed pets now get sucked into portals
+	~	Stats menu pet icons now align to the center column instead of the left
+	*	Fixed pets causing @wBig Lag @sif they couldn't find a path to the player
+	*	Fixed pets on the loading screen affecting level gen
+	*	Fixed the @pPizza Sewers @scave-in causing pets it killed to become @wImmortal @sfor the rest of the level
+	
+	  @(sprite:menu/banners/sprHeartWeapons.png:2:0)@(sprite:menu/banners/sprHeartWeapons.png:2:1)
+	WEAPONS
+	+	Clam Shield
+	+	Bubble Bat
+	+	@gEnergy Bat
+	+	@pTeleport Gun
+	+	@rAnnihilator
+	+	@rTunneller
+	~	Revised @wQuasar Cannon's @ssprite @(sprite:weps/sprQuasarCannon.png:1:0:-1:12)
+	~	@wBone @sthrowing speed is now increased by @bLong Arms
+	~	@wBubble Bombs @sare better at holding projectiles
+	
+	                @(sprite:menu/banners/sprHeartPolish.png:4)
+	POLISH & IMPROVEMENT
+	+	Various @wPerformance Improvements
+	+	Added a @wBoss Intro @sfor @bBIG FISH
+	+	@wDeflected @sprojectiles visually change:
+	 	@(sprite:sprEnemyBullet1:0:1) -> @(sprite:sprAllyBullet:0:1)
+	 	@(sprite:sprBullet2:0:1) -> @(sprite:sprEBullet3:0:1)
+	+	Neat @wAlert Indicators @sfor various situations, such as offscreen van portals @(sprite:alerts/sprVanAlert.png:1) and seal spawns @(sprite:alerts/sprSealAlert.png:1)
+	+	NT:TE's @yGolden Weapons @sare now stored on the loadout manually
+	+	New @wUnlock Icons @sfor NT:TE's stats screen
+	+	@pMom @sgets her very own nest in @gLoop Sewers
+	+	Special loading screen for @pPizza Sewers
+	+	The @wTurtles @sbought a new @wRug
+	+	@wBolts @scan now stick in @wSeal Shields
+	+	@wSeals @sget necromanced into @wSkeletal Seals
+	+	@yYV's Car @sspawns in a @w3x3 @sroom so it doesn't overlap chests or props
+	+	Walltop ravens now support @wtelekinesis, sharp teeth, anomaly, @setc.
+	+	Gave the @wThrone Room @ssome working @wStairs, @sthe carpet is now fully walkable
+	+	@gCat Chests @snow synergize with @yCrown of Love
+	+	Backpacks have new @wSkeletons @sand @wWeapon Debris
+	+	@wGuitar & Black Sword @sspawn stuck in the ground
+	+	Gave @bPit Squid's @stentacles a new death sprite
+	+	Implemented some more @bUnderwater @sarea polish
+	+	Gave @wShadows @sto:
+			Big Wall Decals
+			The Throne
+			Eyes' Maggot Friend  @(sprite:sprEyesMenu:0:-0.4:-1:12)
+			Captain's Desk/TV
+			Cuz's Couch/TV
+	+	Gave @wRobot @sspecial interactions for eating certain NT:TE guns
+	+	Some visual improvements to @wBuried Vaults
+	+	All of NT:TE's visuals now support @w>1x Pixel Scaling
+	~	@yLair's @snormal chests are now shop chests, instead of the bosses dropping them
+	~	@wCrown of Crime @snow unlocks when you @wopen @sthe @yLair
+	~	@yTreasure Chests @smoved to sea & drop better loot
+	~	@bSunken Chests @sspawn in a room instead of on walls
+	~	@wSpider Walls @srelease @wSpiderlings @swith a bounce to make them more obvious
+	~	Reduced loop scaling for @wSpider Walls @sand made them more performant
+	~	Reduced mortar plasma's impact intensity
+	~	Gave playable @wBig Dog @sa bigger @sunderwater bubble
+	~	The @wWater Quality @soption is now @wVisual Quality @sand affects much more
+	~	Merged Disc Gun projectiles now use @rEnemy @ssprites
+	~	@bCoast @snow only spawns sea mines on @(sprite:menu/sprRouteIcon.png:2:0)@w1-3
+	~	Slightly increased @bCoast @sand @yLair's @smusic volumes
+	~	@wSeal King @snow plays their boss music for the initial wave of seals
+	~	@yShop Chests @snow automatically select an item if opened by a portal
+	~	@ySpirit Pickups @sturn into health pickups on dissipation
+	~	@gVenom Pellets @shave new sprites and can pierce
+	~	Big Bat's @gVenom Flak @sprojectiles now blow up if deflected while charging
+	~	@rCharm @sis a bit better at giving enemies @gGreen @seyes
+	~	@wBuried Vaults @sare rarer, but have a clearer hint
+	~	Made the @wThrone's @slegs break walls as they extend, instead of all at once
+	~	Gave the @wThrone @sa smaller cause-of-death sprite
+	~	Walltop shadows are @w10% @smore transparent @q@w!!!
+	*	Going to @pPizza Sewers @snow unlocks @bEyes B @(sprite:sprMapIcon:0:5:-1:12)
+	*	Fixed @pPizza Sewers @sdoors becoming a partial wall
+	*	Fixed the opened @gSewers @smanhole leaving empty chests and partial scorchmarks above it
+	*	Fixed @yLair's @sroom placement being slightly biased towards the east
+	*	Fixed Big Bat rarely creating a permanent @w9999 @shealth bat when transforming
+	*	Fixed @wRain Splashes @(sprite:sprRainSplash:0:-0.3) @sappearing below walls when outside the level
+	*	Fixed @wSawblade Trap @sexplosions not setting a cause-of-death on game over
+	*	Fixed @wSpiderlings @snot being capturable in bubble bombs
+	*	Fixed @bCoast @slagging to death from firing certain merged weapons a lot
+	*	Fixed pickups out in @bCoast's @socean getting pushed back to shore crazy fast
+	*	Fixed an error from @bBIG FISH @sbeing charmed when all players are dead
+	*	Fixed the @wThrone's @storches vanishing when activated
+	*	Fixed @wBuried Vaults @shaving softlock potential
+	*	Incomplete @wBuried Vaults @soccur far less often
+	*	@wBuried Vaults @sshouldn't open instantly at the start of the level anymore
+	*	Fixed the walltop @gRad Maggot Canister @ssoftlock
+	*	Fixed walltop enemies jumping into little baby jails
+	*	Fixed playable @wBig Dog @snot being able to interact with any of NT:TE's prompts
+	*	@ySpirit Pickups @snow correctly play disappear effects for their extra @wHaste @shalo
+	*	Fixed the base game's @wWall Decals @ssometimes getting destroyed around the spawn
+	*	NT:TE's areas shouldn't create any props right next to the spawn anymore
+	*	Fixed certain things occurring multiple times for every extra co-op player
+	-	@bTrench's @sweapon chest can no longer get replaced by a @bSunken Chest
+	-	Removed/reduced a number of walltop enemy & prop spawns in favor of new additions
+	
+	BALANCE
+	+	@wAlbino Gators @sthrow @rQuasar Nades
+	+	@wArctic Seal Discs @shave custom sprites and red trails for visibility @(sprite:enemies/Seal/sprSealDisc.png:2:0:-1:12)
+	+	Gave @bPit Squid's @stentacles some neat energy outlines for visibility
+	~	@wBig Maggot Nests @semit less maggots and have had their @rHP @sreduced from @w50 @sto @w42
+	~	Reduced Scrapyard @wSawblade Trap @sspawns by @w50% @sand removed them for @wBig Dog
+	~	Reduced @rHP @sof various @bCoast @senemies:
+			Pelican   	 @w50 @s-> @w45
+			Diver     	  @w12 @s-> @w10
+			Seal      	  @w12 @s-> @w10
+			Heavy Seal	 @w40 @s-> @w32
+			Seal King 	@w300 @s-> @w260
+	~	@wSeal King @sspawns more @wGrunt Seals, @sless @wShielder @sand @wBlunderbuss Seals
+	~	@wShielder Seals @sshould be much easier
+		(smaller shield hitbox, won't always face you, etc.)
+	~	@bJellyfish @sspeed increased and contact damage upped from @w3 @sto @w4
+	~	@bEels @smove a little faster
+	~	Gave @yCrystal Mortars @sa bigger hitbox
+	~	@pPortal Guardians @sare much scarier
+	~	@ySpirit Pickups @sfade significantly faster and only drop from boss enemies
+	*	Fixed eating a stack of bones as @wRobot @sonly counting as one
+	*	Fixed @wThrone 2's @sarena rarely having invisible walls over floors
+	*	@bPit Squid's @seye lasers should no longer hit the player through walls
+	*	Fixed @bPit Squid's @stentacles not being hittable while retracting or extending
+	-	@yLair's @sdoors no longer block enemy line of sight
+	-	Removed big @gRad Canister @sloot from @wBuried Vaults
+	-	Disabled the Jungle's @gLast Wish @sreroll for future reasons, now done by another @yFlower
+	
+	@dThank you for playing! ~Team TE
+	
+1.1 ~ Polish & Bug Squashing
+	
+	+	Top enemies now support telekinesis, sharp teeth, brain capacity, anomaly, etc.
+	+	Charm now supports all non-NT:TE modded enemies automatically (hopefully)
+	+	Weapons now exist in the loading screen portal
+	+	Opening IDPD chests now closes the portal, just cause
+	+	Bonus ammo now supports pop pop
+	+	Variant scrapyards wall car
+	+	Big Shots venom flak can now drop pickups
+	+	Gave normal water mines the coast water mine's explosion
+	+	Seal King music
+	+	Seal King now smacks pickups away
+	+	Buried vaults look a bit more natural
+	~	Top enemy optimizations
+	~	Top enemies are a bit more inclined to jump off the wall
+	~	Crown of Crime now picks between replacing all weapon chests vs all ammo chests instead of a 66% chance per chest
+	~	Minor change to how charmed enemies target things, they'll attack somewhat more often
+	~	Increased Sawblade Gun's spawn area from 2-1 to 3-2
+	~	Renamed Parrot's description to make their active more obvious
+	~	Renamed the Slaughter skull's "CHUNK" prompt to "SHARE"
+	~	Pet Mimic now holds their weapon in place so it doesn't get pushed away
+	~	Pet Mimic's indicator now says "DROP" when they don't have a weapon
+	~	Optimizations to Hyper Bubbler's hitscan
+	~	Made squid tentacles a stronger light source
+	*	Fixed the god mode bat
+	*	Pet Octo no longer zaps vault statues and other important things
+	*	Pets no longer attack the Pizza Sewers squad on-sight
+	*	Fixed seals being able to attack during Seal King's intro sometimes
+	*	Fixed charm green eyes not appearing in coast's water
+	*	Fixed charmed heavy seals flailing a bit slowly sometimes
+	*	Fixed vaults not playing their music in NT:TE areas
+	*	Fixed buried vaults occasionally spawning close enough to instantly open
+	*	Fixed buried vaults sometimes spawning disjointed (probably)
+	*	Fixed bubble vents rarely exploding on the player entering the level
+	*	Fixed players getting rotated for the rest of the level if in range of a portal that gets closed (by opening the Lair or similar)
+	*	Fixed the heavy seal's mine overlapping things like Seal King
+	*	Fixed elite jellies not giving off light
+	*	Fixed an error from player sawblade discs
+	*	Fixed an error from harpoon ropes
+	-	Seal King no longer charms newly spawned seals when he's charmed (caused big lag)
+	-	Removed bone duplication
+	
+1.02 ~ Hotfix 2
+	
+	*	Fixed a rare heavy seal anchor error
+	*	Fixed a hard crash sometimes caused by ally-sprited charmed enemy projectiles
+	*	Fixed bonus spirit halos not appearing when in coast's water
+	*	Fixed buried vaults being able to mess up the pizza drain hallway
+	*	Buried vaults should be closer to 100% consistent with giving loot
+	
+1.01 ~ Hotfix 1
+	
+	*	Fixed charmed laser crystals erroring
+	
+1.0 ~ RELEASE
